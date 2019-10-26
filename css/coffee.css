@@ -1,0 +1,70 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Microsoft JHengHei" !important;
+    /* 圖片曾濾鏡效果 */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/Geography_03.jpg);
+    /* 背景圖固定不隨卷軸移動 */
+    background-attachment: fixed;
+    /* 若背景圖小於版型可使用cover放大背景圖，可能會失真
+    若背景圖大於版型可使用contain把背景圖縮小 */
+    background-size: cover;
+    background-position: center;
+    /* 背景圖是否重複顯示 */
+    background-repeat: no-repeat;
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+.carousel-item img {
+    /* img的object必須於外層的div有指定寬高才能使用 */
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+}
+
+/* 設定PC版圖片與文字排序交錯 大於992*/
+@media (min-width:992px) {
+    #content .row:nth-child(even) .col-lg-5 {
+        order: 2;
+    }
+
+    #content .row:nth-child(even) .col-lg-7 {
+        order: 1;
+        text-align: right;
+    }
+}
+
+#content .row .col-lg-5 {
+    height: 300px;
+}
+
+#content .row .col-lg-5 img {
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width:992px) {
+    #content .row .col-lg-5 {
+        height: 400px;
+    }
+}
+
+#footer .row {
+    height: 50px;
+}
+
+/* 固定卡片圖片大小 */
+.card-img-top{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}

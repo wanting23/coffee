@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <style>
+        .h100 {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1 class="text-center text-danger">ABCDEFG</h1> -->
+    <!-- container預設寬720px -->
+    <div class="container">
+        <div class="row">
+            <!-- <div class="h100 col-5 bg-success"></div>
+            <div class="h100 col-2 bg-danger"></div>
+            <div class="h100 col-5 bg-warning"></div> -->
+
+            <!-- 網頁為12的網格 col-12 表手機一個12個網格 -> 一行一個
+            col-md-6 表平板一個佔6個網格 -> 一行兩個
+            col-lg-3 表電腦一個佔3個網格 -> 一行四個 -->
+            <!-- col col-sm col-md col-lg col-x1  小到大-->
+            <div class="h100 col-12 col-md-6 col-lg-3 bg-success"></div>
+            <div class="h100 col-12 col-md-6 col-lg-3 bg-danger"></div>
+            <div class="h100 col-12 col-md-6 col-lg-3 bg-warning"></div>
+            <div class="h100 col-12 col-md-6 col-lg-3 bg-dark"></div>
+        </div>
+
+        <!-- justify-content-center可設定元素置中排起，沒有加會從左邊開始排 -->
+        <div class="row justify-content-center">
+            <div class="h100 col-12 col-md-6 col-lg-3 bg-success"></div>
+            <div class="h100 col-12 col-md-6 col-lg-3 bg-danger"></div>
+        </div>
+    </div>
+    <!-- 必須先放jquery再放bootstrap -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

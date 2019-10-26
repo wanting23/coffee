@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- 繁中台灣 -->
+<html lang="zh-Hant-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>東山咖啡</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/coffee.css">
+    <!-- 20191016加入動畫 -->
+    <link rel="stylesheet" href="./css/animate.css">
+
+</head>
+
+<body>
+    <!-- navbar-dark 白色的字  bg-primary改底色 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/coffee.png" alt="" width="30" height="30">
+                東山咖啡
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!-- active目前所在頁面 -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i>首頁<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="spot.html"><i class="fas fa-tree"></i>景點介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="traffic.html"><i class="fas fa-car"></i>交通位置</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleIndicators" class="carousel slide pulse wow" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/dongshan-cafe_01.jpg" class="d-block w-100 h-100" alt="...">
+                            <!-- d-none手機時不顯示此區域 -->
+                            <div class="carousel-caption d-md-block">
+                                <h5>東山農會咖啡文化館</h5>
+                                <p>東山農會咖啡文化館</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/dongshan-cafe_03.jpg" class="d-block w-100 h-100" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <h5>東山農會咖啡文化館</h5>
+                                <p>東山農會咖啡文化館</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/dongshan-cafe_04.jpg" class="d-block w-100 h-100 " alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <h5>東山農會咖啡文化館</h5>
+                                <p>東山農會咖啡文化館</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <!-- pulse wow -->
+                <h1 class="text-white text-center rubberBand wow">歡迎來到東山咖啡</h1>
+                <hr class="bg-white">
+            </div>
+        </div>
+    </div>
+    <div class="container my-5" id="content">
+        <!-- 每層用row包住方便排序 -->
+        <div class="row my-3">
+            <div class="col-12 col-lg-5">
+                    <!-- slideInLeft wow 加入動畫效果 -->
+                <img src="./img/banner-image_01.jpg" alt="" class="w-100 h-100 slideInLeft wow">
+            </div>
+            <div class="col-12 col-lg-7 text-white align-self-center my-3 slideInRight wow">
+                <h1>咖啡的好與壞</h1>
+                <p>有發現越來越多咖啡連鎖店一家家開，<br>
+                    顯見咖啡已涉入現代人生活中，<br>
+                    咖啡會如此流行.迷人，那有沒有想過咖啡裡是怎樣的物質呢？<br>
+                    對人體是好與壞呢?!</p>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-12 col-lg-5">
+                <img src="./img/banner-image_05.jpg" alt="" class="w-100 h-100 slideInRight wow">
+            </div>
+            <div class="col-12 col-lg-7 text-white align-self-center my-3 slideInLeft wow">
+                <h1>喝咖啡的好處</h1>
+                <p>根據美國俄亥俄州立大學1994年的研究，咖啡因的確能提高清醒度，<br>
+                    能提高細胞內環磷腺?的含量，小劑量能興奮大腦皮層，<br>
+                    振奮精神，改善思維，消除疲勞，加快反應，提昇工作效率。</p>
+            </div>
+        </div>
+    </div>
+    <!-- container-fluid預設滿版 -->
+    <div class="container-fluid bg-info" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 align-self-center">
+                    <h5 class="text-white text-center">&copy;2019 泰山職訓</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 必須先放jquery再放bootstrap -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- 20191016加入動畫 滾輪滾到畫面才會顯示動畫，顯示一次-->
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
